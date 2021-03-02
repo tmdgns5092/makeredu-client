@@ -1,0 +1,14 @@
+$breakpoint_desktop: 1024px;
+$breakpoint_desktopLarge: 1200px;
+
+@mixin desktop {
+  @media (min-width: $breakpoint_desktop) {
+    @content;
+  }
+}
+
+@mixin desktopLarge {
+  @media (min-width: $breakpoint_desktopLarge) {
+    @content;
+  }
+}
